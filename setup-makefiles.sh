@@ -73,7 +73,7 @@ EOF
 
 #BOARD_GPS_LIBRARIES := libmoto_gps
 
-#USE_CAMERA_STUB := false
+USE_CAMERA_STUB := false
 EOF
 
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/overlay/packages/apps/Launcher2/res/layout
