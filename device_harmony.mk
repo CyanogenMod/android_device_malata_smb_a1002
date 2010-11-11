@@ -5,7 +5,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Get a proper init file
 PRODUCT_COPY_FILES += \
-    device/nvidia/harmony/init.harmony.rc:root/init.rc
+    device/nvidia/harmony/init.harmony.rc:root/init.harmony.rc
 #    device/nvidia/harmony/initlogo.rle:root/initlogo.rle
 #    device/nvidia/harmony/init_recovery.rc:root/init_recovery.rc
 

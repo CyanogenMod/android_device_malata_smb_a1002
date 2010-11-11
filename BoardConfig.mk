@@ -31,7 +31,7 @@ TARGET_BOOTLOADER_BOARD_NAME := harmony
 #BOARD_HAVE_BLUETOOTH := true
 #BOARD_HAVE_BLUETOOTH_CSR := true
 
-BOARD_KERNEL_CMDLINE := 
+BOARD_KERNEL_CMDLINE := mem=448M@0M nvmem=64M@448M vmalloc=192M video=tegrafb console=ttyS0,115200n8 usbcore.old_scheme_first=1 cpuid=200102 devicetype=1002 btmac=9c5ed6131a00 tegraboot=nand mtdparts=tegra_nand:16384K@12032K(misc),16384K@62208K(recovery),16384K@79104K(boot),204800K@96000K(system),222464K@301312K(cache),4096K@7424K(bootbmp),32768K@28928K(logodata) androidboot.hardware=harmony
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
