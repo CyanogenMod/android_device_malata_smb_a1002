@@ -98,6 +98,22 @@ on boot
     chown dhcp dhcp /data/misc/dhcpcd
     setprop wifi.interface wlan0
 
+# bluetooth permissions
+    chmod 0660 /dev/ttyHS2
+    chown bluetooth bluetooth /dev/ttyHS2
+    chmod 0660 /sys/class/rfkill/rfkill0/state
+    chmod 0660 /sys/class/rfkill/rfkill0/type
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
+    write /sys/class/rfkill/rfkill0/state 0
+    copy system/lib/hw/wlan/BCM4329B1.hcd /data/BCM4329B1.hcd
+    chmod 0777 /data/BCM4329B1.hcd
+
+#do calibration when have file calibration.ini in sdcard
+service TSCalibration /system/bin/TSCalibration
+    user root
+    oneshot
+
 service nvrm_daemon /system/bin/nvrm_daemon
     user root
     onrestart restart servicemanager
@@ -115,36 +131,14 @@ service dhcpcd /system/bin/dhcpcd -dd -f /system/etc/dhcpcd/dhcpcd.conf wlan0
     oneshot
     disabled
 
-on property:init.svc.wpa_supplicant=stopped
-    stop dhcpcd
-
-on boot
-#do calibration when have file calibration.ini in sdcard
-service TSCalibration /system/bin/TSCalibration
-    user root
-    oneshot
-
-on boot
-# bluetooth permissions
-    chmod 0660 /dev/ttyHS2
-    chown bluetooth bluetooth /dev/ttyHS2
-    chmod 0660 /sys/class/rfkill/rfkill0/state
-    chmod 0660 /sys/class/rfkill/rfkill0/type
-    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
-    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
-    write /sys/class/rfkill/rfkill0/state 0
-    copy system/lib/hw/wlan/BCM4329B1.hcd /data/BCM4329B1.hcd
-    chmod 0777 /data/BCM4329B1.hcd
-
 service abtfilt /system/bin/abtfilt -c -d -z -n
     user root
 
-service hciattach /system/bin/bc_hciattach -n -t 100 -s 115200 ttyHS2 bcm4329 921600 flow	
+service hciattach /system/bin/hciattach -n -t 100 -s 115200 ttyHS2 bcm4329 921600 flow	
     user bluetooth
     group system bluetooth net_bt_admin misc
     oneshot
     disabled
 
-#for gps
-on boot
-	chmod 0777 /dev/ttyHS3
+on property:init.svc.wpa_supplicant=stopped
+    stop dhcpcd
