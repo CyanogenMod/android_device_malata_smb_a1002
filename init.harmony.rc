@@ -134,7 +134,7 @@ service dhcpcd /system/bin/dhcpcd -dd -f /system/etc/dhcpcd/dhcpcd.conf wlan0
 service abtfilt /system/bin/abtfilt -c -d -z -n
     user root
 
-service hciattach /system/bin/hciattach -n -t 100 -s 115200 ttyHS2 bcm4329 921600 flow	
+service hciattach /system/bin/bc_hciattach -n -t 100 -s 115200 ttyHS2 bcm4329 921600 flow	
     user bluetooth
     group system bluetooth net_bt_admin misc
     oneshot
