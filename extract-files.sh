@@ -140,10 +140,8 @@ adb pull /system/bin/tegrastats ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull wifi/bt files
 adb pull /system/etc/bluez/bluecore6.psr ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/etc/wifi/wpa_supplicant.conf ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/wlan/fw_bcm4329.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/wlan/BCM4329B1.hcd ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/hw/wlan/bcm4329.ko ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/wlan/nvram.txt ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/wlan/fw_bcm4329_apsta.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/bc_hciattach ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -311,7 +309,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bluecore6.psr:system/etc/bluez/bluecore6.psr \\
     vendor/__VENDOR__/__DEVICE__/proprietary/fw_bcm4329.bin:system/lib/hw/wlan/fw_bcm4329.bin \\
     vendor/__VENDOR__/__DEVICE__/proprietary/BCM4329B1.hcd:system/lib/hw/wlan/BCM4329B1.hcd \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/bcm4329.ko:system/lib/hw/wlan/bcm4329.ko \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvram.txt:system/lib/hw/wlan/nvram.txt \\
     vendor/__VENDOR__/__DEVICE__/proprietary/fw_bcm4329_apsta.bin:system/lib/hw/wlan/fw_bcm4329_apsta.bin \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bc_hciattach:system/bin/bc_hciattach
