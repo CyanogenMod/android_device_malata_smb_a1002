@@ -1,0 +1,110 @@
+key 399   GRAVE             WAKE
+key 41    GRAVE             WAKE
+key 1     BACK              WAKE
+key 2     1                 WAKE
+key 3     2                 WAKE
+key 4     3                 WAKE
+key 5     4                 WAKE
+key 6     5                 WAKE
+key 7     6                 WAKE
+key 8     7                 WAKE
+key 9     8                 WAKE
+key 10    9                 WAKE
+key 11    0                 WAKE
+key 158   BACK              WAKE
+key 230   SOFT_RIGHT        WAKE
+key 60    SOFT_RIGHT        WAKE
+key 107   ENDCALL           WAKE
+key 62    ENDCALL           WAKE
+key 229   MENU              WAKE
+key 139   MENU              WAKE
+key 59    MENU              WAKE
+key 127   SEARCH            WAKE
+key 217   SEARCH            WAKE
+key 228   POUND             WAKE
+key 227   STAR              WAKE
+key 231   CALL              WAKE
+key 61    CALL              WAKE
+key 232   DPAD_CENTER       WAKE
+key 108   DPAD_DOWN         WAKE
+key 103   DPAD_UP           WAKE
+key 102   HOME              WAKE
+key 105   DPAD_LEFT         WAKE
+key 106   DPAD_RIGHT        WAKE
+key 115   VOLUME_UP
+key 114   VOLUME_DOWN
+key 116   POWER             WAKE
+key 212   CAMERA
+
+key 16    Q                 WAKE
+key 17    W                 WAKE
+key 18    E                 WAKE
+key 19    R                 WAKE
+key 20    T                 WAKE
+key 21    Y                 WAKE
+key 22    U                 WAKE
+key 23    I                 WAKE
+key 24    O                 WAKE
+key 25    P                 WAKE
+key 26    LEFT_BRACKET      WAKE
+key 27    RIGHT_BRACKET     WAKE
+key 43    BACKSLASH         WAKE
+
+key 30    A                 WAKE
+key 31    S                 WAKE
+key 32    D                 WAKE
+key 33    F                 WAKE
+key 34    G                 WAKE
+key 35    H                 WAKE
+key 36    J                 WAKE
+key 37    K                 WAKE
+key 38    L                 WAKE
+key 39    SEMICOLON         WAKE
+key 40    APOSTROPHE        WAKE
+key 14    DEL               WAKE
+
+key 44    Z                 WAKE
+key 45    X                 WAKE
+key 46    C                 WAKE
+key 47    V                 WAKE
+key 48    B                 WAKE
+key 49    N                 WAKE
+key 50    M                 WAKE
+key 51    COMMA             WAKE
+key 52    PERIOD            WAKE
+key 53    SLASH             WAKE
+key 28    ENTER             WAKE
+
+key 56    ALT_LEFT          WAKE
+key 100   ALT_RIGHT         WAKE
+key 42    SHIFT_LEFT        WAKE
+key 54    SHIFT_RIGHT       WAKE
+key 15    TAB               WAKE
+key 57    SPACE             WAKE
+key 150   EXPLORER          WAKE
+key 155   ENVELOPE          WAKE
+
+key 12    MINUS             WAKE
+key 13    EQUALS            WAKE
+key 215   AT                WAKE
+
+key 69    NUM               WAKE
+
+key 55    STAR              WAKE
+key 71    7                 WAKE
+key 72    8                 WAKE
+key 73    9                 WAKE
+key 74    MINUS             WAKE
+key 75    4                 WAKE
+key 76    5                 WAKE
+key 77    6                 WAKE
+key 78    PLUS              WAKE
+key 79    1                 WAKE
+key 80    2                 WAKE
+key 81    3                 WAKE
+key 82    0                 WAKE
+key 83    PERIOD            WAKE
+key 98    SLASH             WAKE
+key 58    CAPS              WAKE
+
+
