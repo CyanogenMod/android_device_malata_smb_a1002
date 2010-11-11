@@ -24,7 +24,6 @@ mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libaudio.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libaudiopolicy.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/liba2dp.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcgdrv.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/gles2_sanity.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/gles2_simplespin.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -40,7 +39,6 @@ adb pull /system/lib/libnvddk_2d_v2.so ../../../vendor/$VENDOR/$DEVICE/proprieta
 adb pull /system/lib/libnvmm_utils.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvomxilclient.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_video.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libnvrm_channel.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_camera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvdispatch_helper.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_misc.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -179,8 +177,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:obj/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:obj/lib/libnvdispatch_helper.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/liba2dp.so:obj/lib/liba2dp.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvrm_channel.so:obj/lib/libnvrm_channel.so
 
 # Standard blobs necessary for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -194,7 +190,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/omxplayer.so:system/lib/omxplayer.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediaplugin.so:system/lib/libhwmediaplugin.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/liba2dp.so:system/lib/liba2dp.so
 
 # __VENDOR__ blobs for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -204,7 +199,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_utils.so:system/lib/libnvmm_utils.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:system/lib/libnvomxilclient.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_video.so:system/lib/libnvmm_video.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvrm_channel.so:system/lib/libnvrm_channel.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_camera.so:system/lib/libnvmm_camera.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:system/lib/libnvdispatch_helper.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_misc.so:system/lib/libnvmm_misc.so \\
@@ -248,7 +242,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvmm_videoenc_test.so:system/lib/nvmm_videoenc_test.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvddk_2d_test_sanity.so:system/lib/nvddk_2d_test_sanity.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvodm_focuser_conformance.so:system/lib/nvodm_focuser_conformance.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvrm_channel.so:system/lib/libnvrm_channel.so
 
 # Framework files for __DEVICE__
 PRODUCT_COPY_FILES += \\
