@@ -15,7 +15,7 @@ loglevel 3
     export ANDROID_DATA /data
     export EXTERNAL_STORAGE /mnt/sdcard
     export ASEC_MOUNTPOINT /mnt/asec
-    export BOOTCLASSPATH /system/framework/core.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/com.tapntap.platform.jar:/system/framework/com.nvidia.graphics.jar
+    export BOOTCLASSPATH /system/framework/core.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/com.nvidia.display.jar:/system/framework/com.nvidia.graphics.jar
     export TERMINFO /system/etc/terminfo
 
 # Backward compatibility
