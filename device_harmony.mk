@@ -7,10 +7,11 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 PRODUCT_COPY_FILES += \
     device/nvidia/harmony/init.harmony.rc:root/init.harmony.rc
 
-# Plase wifi files
+# Place wifi files
 PRODUCT_COPY_FILES += \
     device/nvidia/harmony/wifi/bcm4329.ko:system/lib/hw/wlan/bcm4329.ko \
-    device/nvidia/harmony/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
+    device/nvidia/harmony/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    device/nvidia/harmony/wifi/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf
 
 $(call inherit-product-if-exists, vendor/nvidia/harmony/harmony-vendor.mk)
 
