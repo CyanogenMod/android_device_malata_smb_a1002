@@ -31,6 +31,7 @@ adb pull /system/lib/libopencorehw.so ../../../vendor/$VENDOR/$DEVICE/proprietar
 adb pull /system/lib/omxplayer.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libhwmediarecorder.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libhwmediaplugin.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libgps.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull needed NV libs
 adb pull /system/lib/libnvodm_dtvtuner.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -177,6 +178,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:obj/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:obj/lib/libnvdispatch_helper.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:obj/lib/libgps.so
 
 # Standard blobs necessary for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -190,6 +192,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/omxplayer.so:system/lib/omxplayer.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediarecorder.so:system/lib/libhwmediarecorder.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libhwmediaplugin.so:system/lib/libhwmediaplugin.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libgps.so:system/lib/libgps.so
 
 # __VENDOR__ blobs for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -242,7 +245,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvodm_imager_conformance.so:system/lib/nvodm_imager_conformance.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvmm_videoenc_test.so:system/lib/nvmm_videoenc_test.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvddk_2d_test_sanity.so:system/lib/nvddk_2d_test_sanity.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/nvodm_focuser_conformance.so:system/lib/nvodm_focuser_conformance.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/nvodm_focuser_conformance.so:system/lib/nvodm_focuser_conformance.so
 
 # Framework files for __DEVICE__
 PRODUCT_COPY_FILES += \\
