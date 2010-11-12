@@ -26,6 +26,9 @@ $(call inherit-product-if-exists, vendor/nvidia/harmony/harmony-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/nvidia/harmony/overlay
 
+# Use MDPI artwork
+PRODUCT_LOCALES += mdpi
+
 # Keyboards
 file := $(TARGET_OUT_KEYLAYOUT)/gpio-keys.kl
 ALL_PREBUILT += $(file)
