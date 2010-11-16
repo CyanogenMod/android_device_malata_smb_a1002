@@ -52,8 +52,13 @@ $(file) : $(LOCAL_PATH)/usb_keyboard_102_en_us.kl | $(ACP)
 
 # VOLD
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/vold.harmony.fstab:system/etc/vold.fstab
+        $(LOCAL_PATH)/etc/vold.harmony.fstab:system/etc/vold.fstab
 
+# Media Profile
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/media_profiles.xml:system/etc/media_profiles.xml
+
+# Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/nvidia/harmony/kernel
 else
