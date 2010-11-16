@@ -61,6 +61,12 @@ on init
     chown root net_raw /dev/socket
     chmod 0775 /dev/socket
 
+    # create secondary sd and usbdisk mount points
+    mkdir /mnt/usbdisk 0000 system system
+    mkdir /mnt/sdcard2 0000 system system
+    symlink /mnt/sdcard2 /sdcard2
+    symlink /mnt/usbdisk /usbdisk
+
 on boot
     # nvrm permissions
     chmod 666 /dev/nvrm
