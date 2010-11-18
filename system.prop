@@ -21,3 +21,7 @@ dalvik.vm.heapsize=64m
 # Set CPU type
 ro.product.cpu.abi=armabi-v7a
 ro.product.cpu.abi2=armeabi
+
+# Add external mount points
+EXTERNAL_STORAGE_MOUNT=/mnt/sdcard1
+ro.additionalmounts=/mnt/sdcard2;/mnt/usbdisk

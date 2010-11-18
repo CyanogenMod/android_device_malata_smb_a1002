@@ -62,10 +62,12 @@ on init
     chmod 0775 /dev/socket
 
     # create secondary sd and usbdisk mount points
+    mount rootfs rootfs / rw remount
     mkdir /mnt/usbdisk 0000 system system
     mkdir /mnt/sdcard2 0000 system system
     symlink /mnt/sdcard2 /sdcard2
     symlink /mnt/usbdisk /usbdisk
+    mount rootfs rootfs / ro remount
 
 on boot
     # nvrm permissions
