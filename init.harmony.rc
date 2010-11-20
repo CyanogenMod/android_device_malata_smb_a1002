@@ -1,4 +1,13 @@
 on init
+# create secondary sd and usbdisk mount points
+    export PHONE_STORAGE /mnt/sdcard
+    mount rootfs rootfs / rw remount
+    mkdir /mnt/usbdisk 0000 system system
+    mkdir /mnt/sdext 0000 system system
+    symlink /mnt/sdext /emmc
+    symlink /mnt/usbdisk /usbdisk
+    mount rootfs rootfs / ro remount
+
 # Mount Data
     umount /data
     devwait /dev/block/mmcblk3p2
@@ -60,14 +69,6 @@ on init
     # allow net_raw to have access to /dev/socket directory
     chown root net_raw /dev/socket
     chmod 0775 /dev/socket
-
-    # create secondary sd and usbdisk mount points
-    mount rootfs rootfs / rw remount
-    mkdir /mnt/usbdisk 0000 system system
-    mkdir /mnt/sdcard2 0000 system system
-    symlink /mnt/sdcard2 /sdcard2
-    symlink /mnt/usbdisk /usbdisk
-    mount rootfs rootfs / ro remount
 
 on boot
     # nvrm permissions

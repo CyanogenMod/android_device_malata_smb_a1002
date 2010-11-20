@@ -12,6 +12,5 @@
 
 #dev_mount sdcard /mnt/sdcard auto /devices/platform/tegra-sdhci.3/mmc_host/mmc0 /devices/platform/tegra-sdhci.3/mmc_host/mmc1
 dev_mount sdcard /mnt/sdcard auto /devices/platform/tegra-sdhci.3/mmc_host/mmc2
-# todo: the secondary sdcard seems to confuse vold badly
-dev_mount sdcard2 /mnt/sdcard2 auto /devices/platform/tegra-sdhci.2/mmc_host/mmc1
+dev_mount sdext /mnt/sdext auto /devices/platform/tegra-sdhci.2/mmc_host/mmc1
 dev_mount usbdisk /mnt/usbdisk auto /devices/platform/tegra-ehci

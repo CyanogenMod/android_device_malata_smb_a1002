@@ -69,6 +69,7 @@ BOARD_CACHE_DEVICE := /dev/block/mtdblock4
 BOARD_CACHE_FILESYSTEM := yaffs2
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk3p1
 BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk2p1
+BOARD_SDEXT_DEVICE := /dev/block/mmcblk2p2
 #BOARD_HAS_DATADATA := true
 #BOARD_DATADATA_DEVICE := /dev/block/stl10
 #BOARD_DATADATA_FILESYSTEM := auto
@@ -76,4 +77,3 @@ BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk2p1
 #BOARD_SYSTEM_DEVICE := /dev/block/stl9
 #BOARD_SYSTEM_FILESYSTEM := auto
 #BOARD_SYSTEM_FILESYSTEM_OPTIONS := llw,check=no
-#BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2

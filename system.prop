@@ -22,6 +22,8 @@ dalvik.vm.heapsize=64m
 ro.product.cpu.abi=armabi-v7a
 ro.product.cpu.abi2=armeabi
 
+# For emmc phone storage
+ro.phone_storage = 1
+
 # Add external mount points
-EXTERNAL_STORAGE_MOUNT=/mnt/sdcard1
-ro.additionalmounts=/mnt/sdcard2;/mnt/usbdisk
+ro.additionalmounts=/mnt/sdext;/mnt/usbdisk
