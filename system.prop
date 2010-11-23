@@ -26,4 +26,4 @@ ro.product.cpu.abi2=armeabi
 ro.phone_storage = 1
 
 # Add external mount points
-ro.additionalmounts=/mnt/sdext;/mnt/usbdisk
+ro.additionalmounts=/mnt/emmc;/mnt/usbdisk

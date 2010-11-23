@@ -1,10 +1,10 @@
 on init
 # create secondary sd and usbdisk mount points
-    export PHONE_STORAGE /mnt/sdcard
+    export PHONE_STORAGE /mnt/emmc
     mount rootfs rootfs / rw remount
+    mkdir /mnt/emmc 0000 system system
+    symlink /mnt/emmc /emmc
     mkdir /mnt/usbdisk 0000 system system
-    mkdir /mnt/sdext 0000 system system
-    symlink /mnt/sdext /emmc
     symlink /mnt/usbdisk /usbdisk
     mount rootfs rootfs / ro remount
 
