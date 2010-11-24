@@ -18,10 +18,6 @@ ro.opengles.version = 131072
 # This is a high density device with more memory, so larger vm heaps for it.
 dalvik.vm.heapsize=64m
 
-# Set CPU type
-ro.product.cpu.abi=armabi-v7a
-ro.product.cpu.abi2=armeabi
-
 # For emmc phone storage
 ro.phone_storage = 1
 

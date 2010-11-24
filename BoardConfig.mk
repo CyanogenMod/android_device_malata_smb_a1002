@@ -4,7 +4,8 @@ USE_CAMERA_STUB := true
 -include vendor/nvidia/harmony/BoardConfigVendor.mk
 
 TARGET_BOARD_PLATFORM := tegra
-TARGET_CPU_ABI := armeabi
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := vfpv3-d16
