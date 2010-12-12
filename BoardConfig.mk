@@ -58,6 +58,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Setting this to avoid boot locks on the system from using the "misc" partition.
 BOARD_HAS_NO_MISC_PARTITION := true
 
+# Indicate that the board has an Internal SD Card
+BOARD_HAS_SDCARD_INTERNAL := true
+
 TARGET_PREBUILT_KERNEL := device/nvidia/harmony/kernel
 
 # Below is a sample of how you can tweak the mount points using the board config.
