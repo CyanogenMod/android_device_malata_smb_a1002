@@ -119,6 +119,12 @@ cp -a $SOURCE/system/usr/keychars/usb_keyboard_102_en_us.kcm.bin ../../../vendor
 cp -a $SOURCE/system/usr/keychars/tegra-kbc.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/usr/keychars/gpio-keys.kcm.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+# Pull keylayout files
+cp -a $SOURCE/system/usr/keylayout/gpio-keys.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+cp -a $SOURCE/system/usr/keylayout/nvec_keyboard.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+cp -a $SOURCE/system/usr/keylayout/tegra-kbc.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+cp -a $SOURCE/system/usr/keylayout/usb_keyboard_102_en_us.kl ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 # Pull bin files
 cp -a $SOURCE/system/bin/nvmm_vc1dec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/bin/nvmm_wmaprodec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary

@@ -148,6 +148,13 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/tegra-kbc.kcm.bin:system/usr/keychars/tegra-kbc.kcm.bin \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gpio-keys.kcm.bin:system/usr/keychars/gpio-keys.kcm.bin
 
+# Keylayout files for __DEVICE__
+PRODUCT_COPY_FILES += \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/gpio-keys.kl:system/usr/keychars/gpio-keys.kl \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/nvec_keyboard.kl:system/usr/keychars/nvec_keyboard.kl \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/tegra-kbc.kl:system/usr/keychars/tegra-kbc.kl \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/usb_keyboard_102_en_us.kl:system/usr/keychars/usb_keyboard_102_en_us.kl
+
 # bin files for __DEVICE__
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvmm_vc1dec.axf:system/bin/nvmm_vc1dec.axf \\

@@ -29,27 +29,6 @@ DEVICE_PACKAGE_OVERLAYS += device/nvidia/harmony/overlay
 # Use MDPI artwork
 PRODUCT_LOCALES += mdpi
 
-# Keyboards
-file := $(TARGET_OUT_KEYLAYOUT)/gpio-keys.kl
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/gpio-keys.kl | $(ACP)
-        $(transform-prebuilt-to-target)
-
-file := $(TARGET_OUT_KEYLAYOUT)/nvec_keyboard.kl
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/nvec_keyboard.kl | $(ACP)
-        $(transform-prebuilt-to-target)
-
-file := $(TARGET_OUT_KEYLAYOUT)/tegra-kbc.kl
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/tegra-kbc.kl | $(ACP)
-        $(transform-prebuilt-to-target)
-
-file := $(TARGET_OUT_KEYLAYOUT)/usb_keyboard_102_en_us.kl
-ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/usb_keyboard_102_en_us.kl | $(ACP)
-        $(transform-prebuilt-to-target)
-
 # VOLD
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/etc/vold.harmony.fstab:system/etc/vold.fstab
