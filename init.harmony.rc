@@ -1,20 +1,22 @@
-on init
+on boot
+    mount debugfs /sys/kernel/debug /sys/kernel/debug
+
+on fs
+# Mount file systems
+    mkdir /system
+    mkdir /data 0771 system system
+    mkdir /cache 0770 system cache
+    mkdir /devlog 0700 root root
+    mount yaffs2 /dev/block/mtdblock3 /system wait ro relatime
+    mount ext3 /dev/block/mmcblk3p2 /data wait rw nosuid nodev relatime errors=continue data=writeback
+    mount yaffs2 /dev/block/mtdblock4 /cache wait rw nosuid nodev relatime
+
 # create secondary sd and usbdisk mount points
     export PHONE_STORAGE /mnt/emmc
-    mount rootfs rootfs / rw remount
     mkdir /mnt/emmc 0000 system system
     symlink /mnt/emmc /emmc
     mkdir /mnt/usbdisk 0000 system system
     symlink /mnt/usbdisk /usbdisk
-    mount rootfs rootfs / ro remount
-
-# Mount Data
-    umount /data
-    devwait /dev/block/mmcblk3p2
-    mount ext3 /dev/block/mmcblk3p2 /data nosuid nodev
-    exec /system/bin/e2fsck -p /dev/block/mmcblk3p2
-    chown system system /data
-    chmod 0771 /data
 
     # Create dump dir and collect dumps.
     # Do this before we mount cache so eventually we can use cache for
@@ -70,7 +72,6 @@ on init
     chown root net_raw /dev/socket
     chmod 0775 /dev/socket
 
-on boot
     # nvrm permissions
     chmod 666 /dev/nvrm
 
