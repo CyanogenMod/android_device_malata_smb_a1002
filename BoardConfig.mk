@@ -1,4 +1,5 @@
 USE_CAMERA_STUB := true
+BOARD_USE_FROYO_LIBCAMERA := true
 
 # inherit from the proprietary version
 -include vendor/nvidia/harmony/BoardConfigVendor.mk
@@ -37,6 +38,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
 BOARD_USES_GENERIC_AUDIO := false
+BOARD_PREBUILT_LIBAUDIO := true
 
 BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
 
