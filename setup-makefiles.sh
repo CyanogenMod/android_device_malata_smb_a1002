@@ -120,8 +120,7 @@ PRODUCT_COPY_FILES += \\
 # Framework files for __DEVICE__
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/com.nvidia.display.jar:system/framework/com.nvidia.display.jar \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/com.nvidia.graphics.jar:system/framework/com.nvidia.graphics.jar \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/com.tapntap.platform.jar:system/framework/com.tapntap.platform.jar
+    vendor/__VENDOR__/__DEVICE__/proprietary/com.nvidia.graphics.jar:system/framework/com.nvidia.graphics.jar
 
 # EGL files for __DEVICE__
 PRODUCT_COPY_FILES += \\
@@ -192,11 +191,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvram.txt:system/lib/hw/wlan/nvram.txt \\
     vendor/__VENDOR__/__DEVICE__/proprietary/fw_bcm4329_apsta.bin:system/lib/hw/wlan/fw_bcm4329_apsta.bin \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bc_hciattach:system/bin/bc_hciattach
-
-# IME files
-PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libjni_tapntapime.so:system/lib/libjni_tapntapime.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/TapNTapIME.apk:/system/app/TapNTapIME.apk
 EOF
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ../../../vendor/$VENDOR/$DEVICE/$DEVICE-vendor.mk

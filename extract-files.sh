@@ -88,7 +88,6 @@ adb pull /system/lib/nvodm_focuser_conformance.so ../../../vendor/$VENDOR/$DEVIC
 # Pull nvidia framework libs
 adb pull /system/framework/com.nvidia.display.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/com.nvidia.graphics.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/framework/com.tapntap.platform.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull nvidia EGL libs
 adb pull /system/lib/egl/libEGL_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
@@ -152,9 +151,5 @@ adb pull /system/lib/hw/wlan/BCM4329B1.hcd ../../../vendor/$VENDOR/$DEVICE/propr
 adb pull /system/lib/hw/wlan/nvram.txt ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/wlan/fw_bcm4329_apsta.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/bc_hciattach ../../../vendor/$VENDOR/$DEVICE/proprietary
-
-# Pull IME files
-adb pull /system/lib/libjni_tapntapime.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/app/TapNTapIME.apk ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 ./setup-makefiles.sh
