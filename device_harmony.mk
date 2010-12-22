@@ -26,6 +26,13 @@ $(call inherit-product-if-exists, vendor/nvidia/harmony/harmony-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/nvidia/harmony/overlay
 
+# Include packages
+PRODUCT_PACKAGES += \
+    librs_jni \
+    overlay.default \
+    gralloc.default \
+    gps.harmony
+
 # Use MDPI artwork
 PRODUCT_LOCALES += mdpi
 
