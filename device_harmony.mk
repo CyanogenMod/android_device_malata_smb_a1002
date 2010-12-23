@@ -29,9 +29,12 @@ DEVICE_PACKAGE_OVERLAYS += device/nvidia/harmony/overlay
 # Include packages
 PRODUCT_PACKAGES += \
     librs_jni \
-    overlay.default \
     gralloc.default \
-    gps.harmony
+    gps.harmony \
+    gralloc.tegra \
+    overlay.tegra \
+    lights.tegra \
+    sensors.tegra
 
 # Use MDPI artwork
 PRODUCT_LOCALES += mdpi
