@@ -12,6 +12,9 @@ on fs
     mount yaffs2 /dev/block/mtdblock4 /cache wait rw nosuid nodev relatime
 
 # create secondary sd and usbdisk mount points
+    export ANDROID_ROOT /system
+    export ANDROID_DATA /data
+    export EXTERNAL_STORAGE /mnt/sdcard
     export PHONE_STORAGE /mnt/emmc
     mkdir /mnt/emmc 0000 system system
     symlink /mnt/emmc /emmc
