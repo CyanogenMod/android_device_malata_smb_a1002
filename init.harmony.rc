@@ -1,6 +1,13 @@
 on boot
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
+on init
+# set variables
+    export PHONE_STORAGE /mnt/emmc
+    export EXTERNAL_STORAGE_SD2 /mnt/emmc
+    export EXTERNAL_STORAGE_UDISK /mnt/udisk
+    export BOOTCLASSPATH /system/framework/core.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/core-junit.jar:/system/framework/com.tapntap.platform.jar:/system/framework/com.nvidia.graphics.jar
+
 on fs
 # Mount file systems
     mkdir /system
@@ -12,10 +19,6 @@ on fs
     mount yaffs2 /dev/block/mtdblock4 /cache wait rw nosuid nodev relatime
 
 # create secondary sd and usbdisk mount points
-    export ANDROID_ROOT /system
-    export ANDROID_DATA /data
-    export EXTERNAL_STORAGE /mnt/sdcard
-    export PHONE_STORAGE /mnt/emmc
     mkdir /mnt/emmc 0000 system system
     symlink /mnt/emmc /emmc
     mkdir /mnt/usbdisk 0000 system system
