@@ -117,10 +117,14 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvddk_2d_test_sanity.so:system/lib/nvddk_2d_test_sanity.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvodm_focuser_conformance.so:system/lib/nvodm_focuser_conformance.so
 
-# Framework files for __DEVICE__
+# nvidia framework files for __DEVICE__
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/com.nvidia.display.jar:system/framework/com.nvidia.display.jar \\
     vendor/__VENDOR__/__DEVICE__/proprietary/com.nvidia.graphics.jar:system/framework/com.nvidia.graphics.jar
+
+# TnT framework files for __DEVICE__
+PRODUCT_COPY_FILES += \\
+vendor/__VENDOR__/__DEVICE__/proprietary/com.tapntap.platform.jar:system/framework/com.tapntap.platform.jar
 
 # EGL files for __DEVICE__
 PRODUCT_COPY_FILES += \\

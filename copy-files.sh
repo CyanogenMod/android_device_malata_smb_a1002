@@ -97,6 +97,9 @@ cp -a $SOURCE/system/lib/nvodm_focuser_conformance.so ../../../vendor/$VENDOR/$D
 cp -a $SOURCE/system/framework/com.nvidia.display.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/framework/com.nvidia.graphics.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+# Pull TnT framework files
+cp -a $SOURCE/system/framework/com.tapntap.platform.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 # Pull nvidia EGL libs
 cp -a $SOURCE/system/lib/egl/libEGL_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/lib/egl/libGLESv1_CM_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary

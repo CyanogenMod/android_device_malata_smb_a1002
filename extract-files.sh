@@ -89,6 +89,9 @@ adb pull /system/lib/nvodm_focuser_conformance.so ../../../vendor/$VENDOR/$DEVIC
 adb pull /system/framework/com.nvidia.display.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/framework/com.nvidia.graphics.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+# Pull TnT framework files
+adb pull /system/framework/com.tapntap.platform.jar ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 # Pull nvidia EGL libs
 adb pull /system/lib/egl/libEGL_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/egl/libGLESv1_CM_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
