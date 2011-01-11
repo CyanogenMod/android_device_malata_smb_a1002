@@ -41,6 +41,9 @@ BOARD_PAGE_SIZE := 0x00000800
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_PREBUILT_LIBAUDIO := true
 
+# Use dirty hack to allow froyo libaudio
+BOARD_USE_KINETO_COMPATIBILITY := true
+
 BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
 
 # fix this up by examining /proc/mtd on a running device
