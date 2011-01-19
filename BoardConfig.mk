@@ -20,6 +20,9 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/harmony/recovery/recover
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := harmony
 
+# use pre-kernel.35 vold usb mounting
+BOARD_USE_USB_MASS_STORAGE_SWITCH := true
+
 # Modem
 TARGET_NO_RADIOIMAGE := true
 
