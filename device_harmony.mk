@@ -35,7 +35,8 @@ PRODUCT_PACKAGES += \
     overlay.tegra \
     lights.tegra \
     sensors.tegra \
-    audiofix.harmony
+    audiofix.harmony \
+    libreference-ril
 
 # Use MDPI artwork
 PRODUCT_LOCALES += mdpi
@@ -62,7 +63,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.com.google.networklocation=1 \
-    ro.setupwizard.enable_bypass=1
+    ro.setupwizard.enable_bypass=1 \
+    keyguard.no_require_sim=1
 
 $(call inherit-product, build/target/product/full.mk)
 
