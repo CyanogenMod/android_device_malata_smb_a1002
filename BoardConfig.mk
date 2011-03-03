@@ -44,6 +44,9 @@ BOARD_PREBUILT_LIBAUDIO := true
 # Use dirty hack to allow froyo libaudio
 BOARD_USE_KINETO_COMPATIBILITY := true
 
+# EGL config 
+TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
+BOARD_NO_RGBX_8888 := true
 BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
 
 # fix this up by examining /proc/mtd on a running device
