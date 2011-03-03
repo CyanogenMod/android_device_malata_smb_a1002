@@ -56,7 +56,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libaudiopolicy.so:system/lib/libaudiopolicy.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:system/lib/libcamera.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libcgdrv.so:system/lib/libcgdrv.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/gles2_sanity.so:system/lib/gles2_sanity.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gles2_simplespin.so:system/lib/gles2_simplespin.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libopencorehw.so:system/lib/libopencorehw.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/omxplayer.so:system/lib/omxplayer.so \\
@@ -195,6 +194,30 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvram.txt:system/lib/hw/wlan/nvram.txt \\
     vendor/__VENDOR__/__DEVICE__/proprietary/fw_bcm4329_apsta.bin:system/lib/hw/wlan/fw_bcm4329_apsta.bin \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bc_hciattach:system/bin/bc_hciattach
+
+# OMX libs for __DEVICE__
+PRODUCT_COPY_FILES += \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/pvplayer.cfg:system/etc/pvplayer.cfg
+
+# Opencore libs for __DEVICE__
+PRODUCT_COPY_FILES += \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_author.so:system/lib/libopencore_author.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_common.so:system/lib/libopencore_common.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_downloadreg.so:system/lib/libopencore_downloadreg.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_download.so:system/lib/libopencore_download.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_mp4localreg.so:system/lib/libopencore_mp4localreg.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_mp4local.so:system/lib/libopencore_mp4local.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_net_support.so:system/lib/libopencore_net_support.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_player.so:system/lib/libopencore_player.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_rtsp.so:system/lib/libopencore_rtsp.so
 EOF
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ../../../vendor/$VENDOR/$DEVICE/$DEVICE-vendor.mk
