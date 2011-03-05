@@ -10,6 +10,10 @@ PRODUCT_COPY_FILES += \
     device/nvidia/harmony/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
     device/nvidia/harmony/wifi/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf
 
+# Place bin files
+PRODUCT_COPY_FILES += \
+    device/nvidia/harmony/bin/TSCalibration:system/bin/TSCalibration
+
 # Place permission files
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
