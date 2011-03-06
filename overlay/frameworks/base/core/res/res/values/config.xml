@@ -134,6 +134,13 @@
         <item>255</item>
     </integer-array>
 
+<!-- Power animations: disable it on Harmony by default.
+     They don't currently work.
+     They cause wakeup issues, and erratic behavior with the power button.
+-->
+     <bool name="config_enableScreenOnAnimation">false</bool>
+     <bool name="config_enableScreenOffAnimation">false</bool>
+
     <!-- Component name of the service providing network location support. -->
     <string name="config_networkLocationProvider">com.google.android.location.NetworkLocationProvider</string>
 
