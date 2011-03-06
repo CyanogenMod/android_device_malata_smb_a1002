@@ -21,4 +21,6 @@
     <integer name="def_screen_off_timeout">1800000</integer>
     <bool name="def_haptic_feedback">false</bool>
     <bool name="def_wifi_on">true</bool>
+    <string name="def_airplane_mode_radios" translatable="false">bluetooth,wifi</string>
+    <string name="airplane_mode_toggleable_radios" translatable="false">bluetooth,wifi</string>
 </resources>
