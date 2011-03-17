@@ -17,7 +17,7 @@ wifi.supplicant_scan_interval = 45
 ro.opengles.version = 131072
 
 # This is a high density device with more memory, so larger vm heaps for it.
-dalvik.vm.heapsize=64m
+dalvik.vm.heapsize=32m
 
 # For emmc phone storage
 ro.phone_storage = 1
