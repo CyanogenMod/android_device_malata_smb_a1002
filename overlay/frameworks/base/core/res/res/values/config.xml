@@ -159,7 +159,7 @@
     <bool name="cm_default_has_soft_buttons">true</bool>
 
     <!-- if true, status bar is shown on bottom by default -->
-    <bool name="cm_default_bottom_status_bar">true</bool>
+    <bool name="cm_default_bottom_status_bar">false</bool>
     <!-- if true, dead zone is activated, which disables pull
     out of the status bar on the middle area - i.e. for people
     who start drag-out events accidently while trying to hit
@@ -167,7 +167,7 @@
     <bool name="cm_default_use_dead_zone">false</bool>
     <!-- if true, soft buttons shown on left, false show them on
     right side of status bar -->
-    <bool name="cm_default_soft_buttons_left">true</bool>
+    <bool name="cm_default_soft_buttons_left">false</bool>
 
     <!-- toggle which buttons to show if soft buttons enabled
     quickna: opens notification area with the press of one button
@@ -176,7 +176,7 @@
     <bool name="cm_default_show_soft_menu">true</bool>
     <bool name="cm_default_show_soft_back">true</bool>
     <bool name="cm_default_show_soft_search">false</bool>
-    <bool name="cm_default_show_soft_quick_na">true</bool>
+    <bool name="cm_default_show_soft_quick_na">false</bool>
 
     <!-- disables display of lockscreen both on boot as on
     power button press to wake devices. usful for devices you
@@ -186,7 +186,7 @@
     when enabled, fullscreen apps show the status bar. status
     bar then gets an adition hide button to switch to real
     fullscreen  -->
-    <bool name="cm_default_disable_fullscreen">true</bool>
+    <bool name="cm_default_disable_fullscreen">false</bool>
 
     <!-- toggles which button to use to unhide the status bar
     to show soft buttons again (see last comment). this is an
@@ -199,7 +199,7 @@
     power... includes reboot and power off) is extended by
     some more options which reflect the soft keys. ignored if soft
     keys are disabled -->
-    <bool name="cm_default_extend_power_menu">true</bool>
+    <bool name="cm_default_extend_power_menu">false</bool>
 
     <!--  toggles which buttons to show on extended power menu -->
     <bool name="cm_default_power_menu_home">true</bool>
