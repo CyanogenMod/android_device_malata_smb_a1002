@@ -3,7 +3,7 @@ BOARD_USE_FROYO_LIBCAMERA := true
 BOARD_FIRST_CAMERA_FRONT_FACING := true
 
 # inherit from the proprietary version
--include vendor/nvidia/harmony/BoardConfigVendor.mk
+-include vendor/malata/smb_a1002/BoardConfigVendor.mk
 
 TARGET_BOARD_PLATFORM := tegra
 TARGET_CPU_ABI := armeabi-v7a
@@ -19,10 +19,11 @@ TARGET_DONT_SET_AUDIO_AAC_FORMAT := true
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # custom recovery ui
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/harmony/recovery/recovery_ui.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/malata/smb_a1002/recovery/recovery_ui.c
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := harmony
+TARGET_OTA_ASSERT_DEVICE := harmony,smb_a1002
 
 # Modem
 TARGET_NO_RADIOIMAGE := true
@@ -51,7 +52,7 @@ BOARD_USE_KINETO_COMPATIBILITY := true
 # EGL config 
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 BOARD_NO_RGBX_8888 := true
-BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
+BOARD_EGL_CFG := device/malata/smb_a1002/egl.cfg
 
 # Use screencap to capture frame buffer for ddms
 BOARD_USE_SCREENCAP := true
@@ -77,7 +78,7 @@ BOARD_HAS_NO_MISC_PARTITION := true
 # Indicate that the board has an Internal SD Card
 BOARD_HAS_SDCARD_INTERNAL := true
 
-TARGET_PREBUILT_KERNEL := device/nvidia/harmony/kernel
+TARGET_PREBUILT_KERNEL := device/malata/smb_a1002/kernel
 
 # Below is a sample of how you can tweak the mount points using the board config.
 # This is for the Samsung Galaxy S.

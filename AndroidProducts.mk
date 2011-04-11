@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_harmony.mk
+    $(LOCAL_DIR)/smb_a1002.mk

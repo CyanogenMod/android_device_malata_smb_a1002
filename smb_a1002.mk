@@ -2,17 +2,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get a proper init file
 PRODUCT_COPY_FILES += \
-    device/nvidia/harmony/init.harmony.rc:root/init.harmony.rc
+    device/malata/smb_a1002/init.harmony.rc:root/init.harmony.rc
 
 # Place wifi files
 PRODUCT_COPY_FILES += \
-    device/nvidia/harmony/wifi/bcm4329.ko:system/lib/hw/wlan/bcm4329.ko \
-    device/nvidia/harmony/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
-    device/nvidia/harmony/wifi/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf
+    device/malata/smb_a1002/wifi/bcm4329.ko:system/lib/hw/wlan/bcm4329.ko \
+    device/malata/smb_a1002/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf \
+    device/malata/smb_a1002/wifi/dhcpcd.conf:/system/etc/dhcpcd/dhcpcd.conf
 
 # Place bin files
 PRODUCT_COPY_FILES += \
-    device/nvidia/harmony/bin/TSCalibration:system/bin/TSCalibration
+    device/malata/smb_a1002/bin/TSCalibration:system/bin/TSCalibration
 
 # Place permission files
 PRODUCT_COPY_FILES += \
@@ -27,9 +27,9 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-$(call inherit-product-if-exists, vendor/nvidia/harmony/harmony-vendor.mk)
+$(call inherit-product-if-exists, vendor/malata/smb_a1002/smb_a1002-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/nvidia/harmony/overlay
+DEVICE_PACKAGE_OVERLAYS += device/malata/smb_a1002/overlay
 
 # Include packages
 PRODUCT_PACKAGES += \
@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
     overlay.tegra \
     lights.tegra \
     sensors.tegra \
-    audiofix.harmony \
+    audiofix.smb_a1002 \
     libreference-ril \
     libreference-cdma-sms \
     screencap
@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/nvidia/harmony/kernel
+	LOCAL_KERNEL := device/malata/smb_a1002/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -75,5 +75,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_harmony
-PRODUCT_DEVICE := harmony
+PRODUCT_NAME := full_smb_a1002
+PRODUCT_DEVICE := smb_a1002
