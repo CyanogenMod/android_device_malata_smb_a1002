@@ -14,6 +14,7 @@ TARGET_ARCH_VARIANT_FPU := vfpv3-d16
 TARGET_CPU_SMP := true
 TARGET_HAVE_TEGRA_ERRATA_657451 := true
 TARGET_USES_OLD_LIBSENSORS_HAL := true
+TARGET_OVERLAY_ALWAYS_DETERMINES_FORMAT := true
 
 # custom recovery ui
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/nvidia/harmony/recovery/recovery_ui.c
