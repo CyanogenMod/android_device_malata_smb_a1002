@@ -218,6 +218,10 @@ PRODUCT_COPY_FILES += \\
    vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_player.so:system/lib/libopencore_player.so \\
    vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_rtspreg.so:system/lib/libopencore_rtspreg.so \\
    vendor/__VENDOR__/__DEVICE__/proprietary/libopencore_rtsp.so:system/lib/libopencore_rtsp.so
+
+# Stage Fright for __DEVICE__
+PRODUCT_COPY_FILES += \\
+   vendor/__VENDOR__/__DEVICE__/proprietary/libstagefrighthw.so:system/lib/libstagefrighthw.so
 EOF
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ../../../vendor/$VENDOR/$DEVICE/$DEVICE-vendor.mk

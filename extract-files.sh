@@ -176,5 +176,8 @@ adb pull /system/lib/libopencore_player.so ../../../vendor/$VENDOR/$DEVICE/propr
 adb pull /system/lib/libopencore_rtspreg.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libopencore_rtsp.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+# Pull Stage Fright (from Ventana GB)
+adb pull /system/lib/libstagefrighthw.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 # Run makefile setup
 ./setup-makefiles.sh
