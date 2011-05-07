@@ -53,6 +53,9 @@ TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 BOARD_NO_RGBX_8888 := true
 BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
 
+# Use screencap to capture frame buffer for ddms
+BOARD_USE_SCREENCAP := true
+
 # fix this up by examining /proc/mtd on a running device
 # dev:    size   erasesize  name
 # mtd0: 01000000 00020000 "misc"
