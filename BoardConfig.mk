@@ -48,9 +48,6 @@ BOARD_PREBUILT_LIBAUDIO := true
 # Use dirty hack to allow froyo libaudio
 BOARD_USE_KINETO_COMPATIBILITY := true
 
-#USE FBREAD for fb0 reads to fix DDMS/Screenshots
-BOARD_SUPPORTS_GRALLOC_FB_READ := ../../../device/nvidia/harmony/gralloc.h
-
 # EGL config 
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 BOARD_NO_RGBX_8888 := true
