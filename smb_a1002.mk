@@ -13,5 +13,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/wifi/bcm4329.ko:system/lib/hw/wlan/bcm4329.ko
 
+PRODUCT_PACKAGES += \
+    libreference-ril
+
 PRODUCT_NAME := full_smb_a1002
 PRODUCT_DEVICE := smb_a1002

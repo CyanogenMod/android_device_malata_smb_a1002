@@ -25,5 +25,6 @@ ro.phone_storage = 1
 # Add external mount points
 ro.additionalmounts=/mnt/emmc;/mnt/usbdisk
 
-# Set the default network type to GSM for Android Market access
-ro.telephony.default_network=0
+# Reference ril to allow Market purchases
+rild.libpath=/system/lib/libreference-ril.so
+rild.libargs=-d /dev/ttyS0
