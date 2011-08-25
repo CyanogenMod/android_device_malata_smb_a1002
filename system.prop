@@ -24,6 +24,7 @@ ro.phone_storage = 1
 
 # Add external mount points
 ro.additionalmounts=/mnt/emmc;/mnt/usbdisk
+ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Reference ril to allow Market purchases
 rild.libpath=/system/lib/libreference-ril.so
