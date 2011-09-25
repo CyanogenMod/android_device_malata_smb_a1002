@@ -4,7 +4,7 @@
 # density in DPI of the LCD of this board. This is used to scale the UI
 # appropriately. If this property is not defined, the default value is 160 dpi. 
 # Density set to 161 to allow market to function properly
-ro.sf.lcd_density=161
+ro.sf.lcd_density=160
 
 wifi.interface = wlan0
 # Time between scans in seconds. Keep it high to minimize battery drain.
